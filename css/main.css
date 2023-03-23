@@ -204,7 +204,7 @@ section.about{
 section.about .sub-container{
     /* background-color: skyblue; */
     margin-top: 30px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
     padding-bottom: 30px;
 }
 section.about .sub-container li{
@@ -254,4 +254,193 @@ section.about ul li a .text p.more::before{
     position: absolute;
     top: -7px;
     left: 0;
+}
+
+/*section.innovation style*/
+section.innovation {
+    margin-bottom: 150px;
+}
+
+section.innovation .img-box{
+    margin-top: 50px;
+    height:540px;
+    background: url(../img/product_1.jpg)
+    no-repeat center / cover;
+
+    position: relative;
+}
+section.innovation .img-box .inner{
+    background: #3a3c4e;
+    width: 80%;
+    color:#fff;
+
+    position: absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+section.innovation .img-box .inner h3{
+    background: #fff;
+    color: #222;
+    font-size: 18px;
+    padding: 25px 45px;
+}
+section.innovation .img-box .bottom{
+    padding:35px 85px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .bottom p{
+    float: left;
+    width: 70%;
+    line-height: 1.6;
+}
+section.innovation .img-box .inner .bottom a{
+    /* display: block; -> float*/
+    float: right;
+    padding: 7px 30px;
+    border-radius: 50px;
+    background: orange;
+}
+section.innovation .img-box .inner .bottom a:hover{
+    background: rgb(255, 94, 0) ;
+}
+
+/* section.me style*/
+section.me{
+    background: url(../img/me.jpg)
+    no-repeat center / cover;
+    padding: 80px 0;
+    margin-bottom: 150px;
+}
+
+section.me ul.list{
+    margin-top: 50px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+section.me ul.list > li{
+    padding: 30px 60px;
+}
+section.me ul.list > li:first-child{
+    border-bottom: 1px solid #ddd;
+}
+section.me ul.list > li h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+}
+section.me ul.list > li h3 span{
+    position: absolute;
+    left: -30px;
+    color:#ff8342;
+}
+section.me ul.list > li p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+section.me ul.list > li .more{
+    font-size: 16px;
+    font-weight: bold;
+}
+section.me ul.list > li .more span{
+    color:#ff8342;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+section.me ul.list ul.in{
+    margin-bottom: 30px;
+
+}
+section.me ul.list ul.in li em{
+    /*float이나 position이 적용되면 자동으로 블록요소로 바뀜*/
+    float: left;
+    font-weight: 700;
+    width: 12%;
+}
+section.me ul.list ul.in li p{
+    float: left;
+    position: relative;
+}
+section.me ul.list ul.in li p::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #555;
+    position: absolute;
+    left:-80px;
+    top: 8px;
+}
+#incruit-btn{
+    display: block;
+    width: 280px;
+    background: #ff8342;
+    color: #fff;
+    margin: 20px auto 0;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/*section sns*/
+section.sns{
+    /* background: orange; */
+    margin: 80px 0;
+}
+section.sns .sub-container{
+    /* background-color: skyblue; */
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 100px;
+}
+section.sns .sub-container li{
+    float: left;
+    width: 32%;
+    height: 500px;
+    margin-left: 1%;
+    box-sizing: border-box;
+}
+section.sns .sub-container li .img-box{
+    height: 100%;
+    position: relative;
+}
+section.sns .sub-container li .img-box img{
+    width: 100%;
+}
+section.sns .sub-container li a .bottom .color{
+    color: #ff8342;
+}
+section.sns .sub-container li a .bottom p{
+    margin-top: 10px;
+}
+section.sns .sub-container li a .bottom .time{
+    margin-bottom: 20px;
+}
+
+/*a hover*/
+section.sns .sub-container li .img-box::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 94, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+section.sns .sub-container li .img-box:hover::before{
+    content: 'BLOG';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+section.sns .sub-container li .img-box:hover::after{
+    width: 100%;
 }
