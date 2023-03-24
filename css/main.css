@@ -477,6 +477,7 @@ footer .inner .ft-logo{
 }
 footer .inner .ft-logo img{
     width: 100%;
+    margin-left: 20px ;
 }
 footer .inner .address{
     float: left;
@@ -546,6 +547,9 @@ footer .inner .list li a:hover{
 
 /*태블릿 1024px 이하 해상도(아이패드 프로)*/
 @media screen and (max-width: 1024px) {
+    header .inner-header .logo img{
+        width: 50%;
+    }
     header .inner-header nav{
         display: none;
     }
@@ -591,6 +595,9 @@ footer .inner .list li a:hover{
 
 /*태블릿 768px 이하 해상도(아이패드 프로)*/
 @media screen and (max-width: 768px) {
+    header .inner-header .logo img{
+        width: 50%;
+    }
     header .inner-header nav{
         display: none;
     }
@@ -599,6 +606,12 @@ footer .inner .list li a:hover{
         float: right;
         font-size: 40px;
         color: #fff;
+    }
+    section.about .sub-container li{
+        float: none;
+        width: 100%;
+        height: 600px;
+        box-sizing: border-box;
     }
     section.main .main-title h2{
         font-size: 15px;
@@ -617,9 +630,22 @@ footer .inner .list li a:hover{
     section.about ul li a .text{
         padding: 5px;
     }
-    section.innovation .img-box .bottom{
+    section.innovation .img-box{
+        width: 100%;
+        height: 500px;
+        background-size: contain;
+        margin-top: 10px;
+    }
+    section.innovation .img-box .inner{
+        width: 100%;
+        height: 250px;
+    }
+    section.innovation .img-box .bottom p{
         font-size: 15px;
         padding: 10px;
+    }
+    section.me{
+        margin-top: 200px;
     }
     section.sns ul li{
         float: none;
@@ -642,6 +668,9 @@ footer .inner .list li a:hover{
 
 /*모바일 414px 이하 해상도(아이폰 6/7/8 plus)*/
 @media screen and (max-width: 414px) {
+    header .inner-header .logo img{
+        width: 50%;
+    }
     header .inner-header nav{
         display: none;
     }
@@ -650,6 +679,12 @@ footer .inner .list li a:hover{
         float: right;
         font-size: 40px;
         color: #fff;
+    }
+    section.about .sub-container li{
+        float: none;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
     }
     section.main .main-title h2{
         font-size: 15px;
@@ -668,9 +703,22 @@ footer .inner .list li a:hover{
         font-size: 12px;
         line-height: 1.5;
     }
-    section.innovation .img-box .bottom{
+    section.innovation .img-box{
+        width: 100%;
+        height: 200px;
+        background-size: contain;
+        margin-top: 10px;
+    }
+    section.innovation .img-box .inner{
+        width: 100%;
+        height: 250px;
+    }
+    section.innovation .img-box .bottom p{
         font-size: 15px;
         padding: 5px;
+    }
+    section.me{
+        margin-top: 200px;
     }
     section.sns ul li .img-box{
         max-height: 500px;
@@ -691,5 +739,8 @@ footer .inner .list li a:hover{
     }
     footer .inner .ft-logo{
         width: 30%;
+    }
+    br.mo{
+        display: block;
     }
 }
