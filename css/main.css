@@ -408,6 +408,8 @@ section.sns .sub-container li .img-box{
 }
 section.sns .sub-container li .img-box img{
     width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 section.sns .sub-container li a .bottom .color{
     color: #ff8342;
